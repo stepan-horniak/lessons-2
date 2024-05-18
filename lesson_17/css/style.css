@@ -97,7 +97,7 @@ body{
 .card-item-most-popular__info {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto-fill 1fr auto-fill;
+  grid-template-rows: auto 1fr auto;
   row-gap: 10px;
 
 }
