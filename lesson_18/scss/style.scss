@@ -708,7 +708,8 @@ body{
     &__slider {
         display: flex;
         column-gap: 40px;
-        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: scroll;
         @media (max-width: 767.98px) {
             column-gap: 22px;
         }
