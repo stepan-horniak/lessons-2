@@ -536,11 +536,14 @@ body {
 .top__wrapper {
   background-color: #E3E3E3;
   width: 100%;
-  height: 100svh;
   position: relative;
   margin-bottom: 90px;
   -webkit-box-shadow: 0 0 5px 0;
-          box-shadow: 0 0 5px 0;
+  box-shadow: 0 0 5px 0;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding-bottom: 20px;
 }
 .top__wrapper::after {
   content: "";
@@ -1817,6 +1820,8 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  width: 141px;
+  overflow-x: hidden;
 }
 @media (any-hover: hover) {
   .bottom-footer__cart:hover {
@@ -1851,5 +1856,16 @@ body {
     -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
             transform: scale(1.05);
+  }
+}
+@media (max-width: 767.98px) {
+  .bottom-footer__scroll-top {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 10;
+    background-color: #1e2832;
+    padding: 10px;
+    border-radius: 50%;
   }
 }
