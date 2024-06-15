@@ -1,0 +1,112 @@
+@use "sass:math";
+// ==============================
+@import "./fonts-proxima-nova";
+@import "./mixins";
+@import "./null";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// =====================================
+//  data-da=".burger-header__container, 991.98, 1"
+//@include adaptiveValue("font-size", 80, 40 , 0, 1320,320);
+// @media (any-hover: hover){}
+// @media (max-width: toEm(991.98)) {}
+// @media (max-width: toEm(767.98)) {}
+// @media (max-width: toEm(479.98)) {}
+
+// ==========================================================
+html {
+  scroll-behavior: smooth;
+}
+body{
+  // font-family: ;
+}
+[class*="__container"] {
+  margin: 0 auto;
+  padding: 0 toRem(15);
+  max-width: toRem(1350);
+}
+.wrapper{
+  min-height: 100%;
+  overflow: clip ;
+}
+
+
+// =============================================
+.homework {
+
+  // .homework__container
+
+  &__container {
+    font-size: toRem(30);
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(30);
+    >* {
+      border-radius: toRem(10);
+      border: 5px solid black;
+      padding: toRem(20);
+    }
+  }
+
+  // .homework__1
+
+  &__1 {
+  }
+
+  // .homework__2
+
+  &__2 {
+  }
+
+  // .homework__3
+
+  &__3 {
+  }
+
+  // .homework__4
+
+  &__4 {
+  }
+
+  // .homework__5
+
+  &__5 {
+  }
+
+  // .homework__6
+
+  &__6 {
+  }
+}
+.task {
+}
+.answer {
+}
+span {
+  padding: toRem(5);
+  background-color: khaki;
+  border-radius: toRem(10);
+}
+button {
+  background-color: black;
+  color: white;
+  padding: toRem(5) toRem(10);
+  border-radius: toRem(20);
+}
+a {
+  background-color: black;
+  color: white;
+  padding: toRem(5) toRem(10);
+  border-radius: toRem(20);
+}
