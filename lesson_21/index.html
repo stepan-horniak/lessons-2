@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>lesson 21</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+
+      <div class="task task-1">
+        <div class="task-1__task">Задача №1
+          Яка назва змінної вірна
+          1. let user-name
+          2. let UserName
+          3. let userName</div>
+        <div class="task-1__answer">
+          <span>відповідь:</span> №3 стиль назв змінних lowerCamelCase
+        </div>
+      </div>
+      <div class="task task-2">
+        <div class="task-2__task">Задача №2
+          Чи буде помилка при виконанні наступної програми <br>
+          const userName = 20
+          userName = "Іштван"
+        </div>
+        <div class="task-2__answer">
+          <span>відповідь:</span> так! буде помилка, const неможна перезаписувати
+        </div>
+      </div>
+      <div class="task task-3">
+        <div class="task-3__task">Задача №3
+          Що потрапить в консоль? <br>
+          let numOne = 20
+          let numTwo = "20"
+
+          let numSumm = numOne + numTwo
+          console.log(numSumm)
+        </div>
+        <div class="task-3__answer">
+          <span>відповідь:</span> 2020! У цьому випадку numOne перетворюється на рядок "20" виконується додавання 2-х
+          рядків.
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./script/dynamic_adapt.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

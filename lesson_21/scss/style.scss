@@ -1,0 +1,101 @@
+@use "sass:math";
+// ==============================
+@import "./fonts-proxima-nova";
+@import "./mixins";
+@import "./null";
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// =====================================
+//  data-da=".burger-header__container, 991.98, 1"
+//@include adaptiveValue("font-size", 80, 40 , 0, 1320,320);
+// @media (any-hover: hover){}
+// @media (max-width: toEm(991.98)) {}
+// @media (max-width: toEm(767.98)) {}
+// @media (max-width: toEm(479.98)) {}
+
+// ==========================================================
+html {
+  scroll-behavior: smooth;
+}
+body{
+  // font-family: ;
+}
+[class*="__container"] {
+  margin: 0 auto;
+  padding: 0 toRem(15);
+  max-width: toRem(1300);
+}
+.wrapper{
+  min-height: 100%;
+  overflow: clip ;
+}
+
+
+// =============================================
+span {
+  background-color: burlywood;
+  border-radius: toRem(15);
+  padding: toRem(10);
+}
+.task {
+  margin: 0 auto;
+  padding: toRem(40) toRem(15);
+  max-width: toRem(1300);
+  font-size: toRem(30);
+  line-height: 1.4;
+  }
+  .task-1 {
+    
+    // .task-1__task
+    
+		&__task {
+      border: 4px solid black;
+      box-shadow: 0 0 toRem(5) 0;
+		}
+
+		// .task-1__answer
+
+		&__answer {
+      padding: toRem(20);
+		}
+}
+.task-2 {
+
+		// .task-2__task
+
+		&__task {
+      border: 4px solid black;
+      box-shadow: 0 0 toRem(5) 0;
+		}
+
+		// .task-2__answer
+
+		&__answer {
+      padding: toRem(20);
+		}
+}
+.task-3 {
+
+		// .task-3__task
+
+		&__task {
+      border: 4px solid black;
+      box-shadow: 0 0 toRem(5) 0;
+		}
+
+		// .task-3__answer
+
+		&__answer {
+      padding: toRem(20);
+		}
+}
