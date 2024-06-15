@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>lesson 20</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <div class="homework">
+        <div class="homework__container">
+          <div class="homework__1">
+            <div class="task">Задача №1
+              Що потрапить в консоль? let someVar = 0;
+              ++someVar;
+
+              if (someVar) {
+              console.log(someVar);
+              }</div>
+            <div class="answer">
+              <span>відповідь:</span> 1 !!!
+            </div>
+          </div>
+          <div class="homework__2">
+            <div class="task">Задача №2
+              За допомогою циклу FOR виведіть в консоль 10 рядків:
+              Пункт №1
+              Пункт №2
+              і т.д.</div>
+            <div class="answer"><span>відповідь:</span> for (let i = 1; i <= 10; i++) { console.log(`Пункт №${i}`);
+                }</div>
+            </div>
+            <div class="homework__3">
+              <p class="task">Задача №3
+                Що потрапить в консоль ?
+                if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <="10" || 20==="20" ) { console.log('000'); }</p>
+                  <div class="answer"><span>відповідь:</span> false || false || false => false</div>
+            </div>
+            <div class="homework__4">
+              <div class="task">Задача №4
+              </div>
+              Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат
+              ділення: "
+              Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
+              Функція не має повертати NaN, Infinite або помилку
+              <div class="answer"><span>відповідь:</span> function division(a = 1, b = 1) <br>{
+                if (typeof a !== 'number' || typeof b !== 'number') {
+                return "Аргументи мають бути числами";
+                } <br>
+                else if (b === 0) {
+                return "Ділення на нуль неможливе";
+                } <br>
+                else {
+                let result = a / b;
+                return `Результат ділення: ${result}`;
+                }
+                }</div>
+            </div>
+            <div class="homework__5">
+              <div class="task">Задача №5
+                Створіть масив даних - 5 елементів, один з яких число 10
+                Обробіть масив за допомогою методу перебору
+                Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль</div>
+              <div class="answer"><span>відповідь:</span>
+                let arr = [5, 8, 10, 15, 20]; <br>
+
+                arr.forEach(element => { <br>
+                if (element === 10) {
+                console.log(element);
+                }
+                });</div>
+            </div>
+          </div>
+        </div>
+    </main>
+  </div>
+  <script src="./script/dynamic_adapt.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
